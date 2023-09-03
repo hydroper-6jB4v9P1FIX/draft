@@ -10,12 +10,12 @@ let node = tree!(<S/>);
 
 This requires `S` to:
 
-- implement `ds::treebuilder::AddChild`,
+- implement `ds::tree::AddChild`,
 - implement either
-  - `ds::treebuilder::Assumes`, which assumes that
+  - `ds::tree::Assumes`, which assumes that
     - the structure contains a `fn new() -> Self` and
     - the structure contains `set_` methods for all attributes.
-  - `ds::treebuilder::Builder<B>`
+  - `ds::tree::Builder<B>`
     - which takes `B` with assumptions from `Assumes`,
     - which assumes `B` has a `result` method (returning `S`) and
     - which requires `fn builder(self) -> B;`

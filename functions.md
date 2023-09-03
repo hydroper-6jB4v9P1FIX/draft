@@ -10,6 +10,14 @@ A function type can be variadic, indicating further arguments than what it takes
 
 A function type, when involving with dynamic typing, gets translated into `EsFunction`.
 
+## Override
+
+```
+impl S {
+    pub override fn f(self) {}
+}
+```
+
 ## Constructor function
 
 The `fn new` structure method is reserved for constructors and always contains a signature like `fn new(self, ...) -> ()`.

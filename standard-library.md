@@ -53,6 +53,8 @@ Notice _parent_ scope. That means you can override anything that `ds::prelude` e
 - Regular expressions
   - `regexp!` literal
 - `ds::ser`: serialization
+- `ds::str`
+  - `ToString`
 
 ## `str` and `char`
 
