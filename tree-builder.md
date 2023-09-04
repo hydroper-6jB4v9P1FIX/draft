@@ -13,7 +13,7 @@ This requires `S` to:
 - implement `ds::tree::AddChild`,
 - implement either
   - `ds::tree::Assumes`, which assumes that
-    - the structure contains a `fn new() -> Self` and
+    - the structure contains a `fn new(self)` and
     - the structure contains `set_` methods for all attributes.
   - `ds::tree::Builder<B>`
     - which takes `B` with assumptions from `Assumes`,
